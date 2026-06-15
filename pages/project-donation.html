@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Platform | AK Portfolio</title>
+  <meta name="description" content="모바일 중심 UX 설계와 공통 컴포넌트 시스템 구축 프로젝트">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="logo"><a href="/">Ain Kim</a></div>
+      <nav class="gnb">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="inner">
+
+        <a href="/" class="back-link">← 포트폴리오로 돌아가기</a>
+
+        <p class="project-year">2023 — 2024</p>
+
+        <h1 class="project-title">Donation Platform</h1>
+
+        <p class="project-summary">
+          비영리 기부 단체의 온라인 기부 플랫폼 구축 프로젝트로,
+          모바일 퍼스트 반응형 UI 설계와
+          공통 컴포넌트 시스템 구축을 담당했습니다.
+        </p>
+
+        <ul class="project-tags">
+          <li>Responsive</li>
+          <li>Mobile First</li>
+          <li>UI System</li>
+          <li>Cross Browser</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- Meta -->
+    <section class="project-meta">
+      <div class="inner">
+        <dl class="meta-grid">
+          <div>
+            <dt>기간</dt>
+            <dd>2023. 09 — 2024. 02</dd>
+          </div>
+          <div>
+            <dt>역할</dt>
+            <dd>Web Publisher</dd>
+          </div>
+          <div>
+            <dt>기여도</dt>
+            <dd>80%</dd>
+          </div>
+          <div>
+            <dt>기술스택</dt>
+            <dd>HTML5 · CSS3 · JavaScript · jQuery · SCSS</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <div class="project-body">
+      <div class="inner">
+
+        <section class="project-section fade-up">
+          <h2>Background</h2>
+          <p>
+            비영리 기부 단체의 온라인 기부 플랫폼을 신규 구축하는 프로젝트입니다.
+            다양한 연령대의 사용자를 대상으로 하며, 모바일 사용 비율이 70% 이상인
+            서비스 특성상 모바일 퍼스트 반응형 UI 설계가 핵심이었습니다.
+            유사한 기부 항목 페이지가 50개 이상 존재하여,
+            일관된 UI 컴포넌트 시스템 구축이 병행 과제로 요구되었습니다.
+          </p>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Responsibilities</h2>
+          <ul class="duty-list">
+            <li>모바일 퍼스트 기반 전 페이지 반응형 HTML · CSS 마크업</li>
+            <li>버튼, 인풋, 카드, 탭, 모달, 토스트 등 공통 컴포넌트 30개 이상 설계 및 마크업 가이드 작성</li>
+            <li>clamp()를 활용한 유동형 타이포그래피 시스템 구현</li>
+            <li>IE11 포함 크로스브라우저 대응 (Polyfill, Fallback CSS)</li>
+            <li>기부 페이지 공통 레이아웃 템플릿화로 신규 페이지 제작 시간 단축</li>
+          </ul>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Key Challenge</h2>
+          <div class="challenge-grid">
+            <div class="challenge-item" data-label="Problem">
+              <p>
+                기부 페이지마다 유사하지만 미묘하게 다른 레이아웃이 반복되어,
+                담당자마다 마크업 방식이 달라지고
+                유지보수와 QA 비용이 계속 늘어나는 상황이었습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Solution">
+              <p>
+                레이아웃 패턴을 분석해 4가지 베이스 템플릿으로 분류하고,
+                BEM 방법론을 도입하여 클래스 네이밍과
+                컴포넌트 경계를 팀 전체에 표준화했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Result">
+              <p>
+                신규 기부 페이지 제작 시간 기존 대비 70% 단축.
+                마크업 일관성 확보로 QA 사이클 단축,
+                온보딩 시 신규 퍼블리셔 적응 시간도 감소.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Retrospective</h2>
+          <div class="retro-block">
+            <p>
+              컴포넌트 시스템의 가치를 직접 체감한 프로젝트였습니다.
+              초기에 기준을 잡는 데 시간이 걸렸지만, 이후 유사 페이지를 빠르게
+              찍어낼 수 있었고 QA팀도 일관된 패턴 덕분에 테스트 범위를 좁힐 수 있었습니다.
+              퍼블리셔도 단순 마크업을 넘어 시스템적 사고를 해야
+              팀 전체의 생산성에 기여할 수 있다는 것을 배웠습니다.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <div class="inner">
+        <a href="/" class="btn">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBA Renewal | AK Portfolio</title>
+  <meta name="description" content="GSAP와 Lenis를 활용한 인터랙티브 기업 사이트 리뉴얼 프로젝트">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="logo"><a href="/">Ain Kim</a></div>
+      <nav class="gnb">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="inner">
+
+        <a href="/" class="back-link">← 포트폴리오로 돌아가기</a>
+
+        <p class="project-year">2024</p>
+
+        <h1 class="project-title">IBA Renewal</h1>
+
+        <p class="project-summary">
+          종합 컨설팅 기업 IBA의 기업 사이트 전면 리뉴얼로,
+          GSAP과 Lenis를 중심으로 스크롤 인터랙션과
+          모션 중심의 경험을 구현했습니다.
+        </p>
+
+        <ul class="project-tags">
+          <li>GSAP</li>
+          <li>Lenis</li>
+          <li>Scroll Interaction</li>
+          <li>Performance</li>
+        </ul>
+
+        <a href="https://iba.or.kr/" class="project-link" target="_blank" rel="noopener noreferrer">
+          사이트 방문하기
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Meta -->
+    <section class="project-meta">
+      <div class="inner">
+        <dl class="meta-grid">
+          <div>
+            <dt>기간</dt>
+            <dd>2024. 08 — 2024. 09</dd>
+          </div>
+          <div>
+            <dt>역할</dt>
+            <dd>Web Publisher</dd>
+          </div>
+          <div>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </div>
+          <div>
+            <dt>기술스택</dt>
+            <dd>HTML5 · SCSS · JavaScript · GSAP · Lenis · Swiper</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <div class="project-body">
+      <div class="inner">
+
+        <section class="project-section fade-up">
+          <h2>Background</h2>
+          <p>
+            IBA는 종합 컨설팅 기업으로, 기업 이미지 쇄신을 위한 사이트 전면 리뉴얼을 진행했습니다.
+            디자인팀은 영상·모션 중심의 고품질 인터랙션 경험을 목표로 했고,
+            각 섹션마다 스크롤 연동 애니메이션, 패럴렉스, 카운터 모션 등
+            다양한 인터랙션이 요구되었습니다.
+            GSAP과 Lenis를 조합하여 부드러운 스크롤 기반 경험을 구현하는 것이
+            이 프로젝트의 핵심이었습니다.
+          </p>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Responsibilities</h2>
+          <ul class="duty-list">
+            <li>GSAP ScrollTrigger 기반 섹션별 스크롤 인터랙션 구현 (Fade, Parallax, Pin 등)</li>
+            <li>Lenis smooth scroll 설정 및 GSAP ticker 통합으로 이벤트 루프 단일화</li>
+            <li>수치 카운터 애니메이션 구현 (IntersectionObserver + gsap.to)</li>
+            <li>배너 슬라이더 커스텀 트랜지션 구현 (Swiper.js)</li>
+            <li>will-change, GPU 가속 적용으로 애니메이션 성능 최적화</li>
+            <li>PC · 태블릿 · 모바일 반응형 인터랙션 분기 처리</li>
+          </ul>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Key Challenge</h2>
+          <div class="challenge-grid">
+            <div class="challenge-item" data-label="Problem">
+              <p>
+                각 컴포넌트마다 스크롤 이벤트 리스너를 개별 등록하면서
+                스크롤 시 심각한 프레임 드롭(30fps 이하)이 발생했고,
+                모바일에서는 인터랙션이 끊기는 현상이 있었습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Solution">
+              <p>
+                Lenis의 raf 콜백을 GSAP ticker에 단일 등록하여
+                이벤트 루프를 통합하고, ScrollTrigger.create()로
+                인스턴스를 컨텍스트 단위로 관리하도록 구조를 변경했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Result">
+              <p>
+                스크롤 성능 60fps 안정화 달성.
+                모바일 환경에서도 버벅임 없는 인터랙션 구현,
+                Lighthouse 성능 점수 기존 대비 18점 향상.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Retrospective</h2>
+          <div class="retro-block">
+            <p>
+              인터랙션의 품질은 라이브러리 선택보다 사용 방법에 달려 있다는 것을 실감한 프로젝트입니다.
+              GSAP과 Lenis를 함께 쓸 때 이벤트 루프를 단일화하지 않으면
+              오히려 성능이 저하될 수 있다는 점을 직접 디버깅하며 배웠습니다.
+              이 경험을 통해 브라우저 렌더링 파이프라인과 requestAnimationFrame에 대한
+              이해가 한 단계 깊어졌습니다.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <div class="inner">
+        <a href="/" class="btn">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+
+</body>
+</html>

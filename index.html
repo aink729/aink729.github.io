@@ -1,12 +1,258 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AK Portfolio</title>
+  <title>AK | Web Publisher Portfolio</title>
+
+  <meta name="description" content="웹 접근성과 사용자 경험을 고려한 웹 퍼블리셔 포트폴리오">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>안녕하세요.</h1>
-  <p>웹 퍼블리셔 AK의 포트폴리오입니다.</p>
+
+  <!-- Header -->
+
+  <header class="header">
+    <div class="inner">
+      <h1 class="logo">
+        <a href="/">Ain Kim</a>
+      </h1>
+
+
+  <nav class="gnb">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+
+  </header>
+
+  <main>
+
+
+<!-- Hero -->
+<section class="hero">
+  <div class="inner">
+
+    <p class="hero__eyebrow">
+      WEB PUBLISHER
+    </p>
+
+    <h2 class="hero__title">
+      사용자 경험과 웹 접근성을 고려한<br>
+      인터랙티브 웹사이트를 구축합니다.
+    </h2>
+
+    <p class="hero__desc">
+      7년 이상의 실무 경험을 바탕으로 UI 마크업, 웹 접근성, 인터랙션 개발, 유지보수까지 담당하고 있습니다.
+    </p>
+
+    <a href="#projects" class="btn">
+      프로젝트 보기
+    </a>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about fade-up">
+  <div class="inner">
+
+    <h2>About</h2>
+
+    <p>
+      새롭게 배운 기술이 실제 서비스에 적용되어 사용자 경험이 나아지는 순간,
+      가장 큰 보람을 느낍니다.
+      디자이너·기획자·백엔드 개발자와 함께 고민하고 의견을 나누며
+      프로젝트의 처음과 끝을 완성한 경험이 지금의 저를 만들었습니다.
+    </p>
+
+    <p>
+      부족한 부분을 솔직히 인정할 때 더 빠르게 성장할 수 있다고 믿기에,
+      배우는 것이 즐겁고 공부한 내용을 팀원들과 나누는 일에 가치를 둡니다.
+      각자의 부족함을 서로 채우고 재능을 인정하는 팀이
+      더 나은 서비스를 만든다는 믿음으로 일합니다.
+    </p>
+
+    <ul class="skill-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>SCSS</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>Responsive Web</li>
+      <li>Web Accessibility</li>
+      <li>Mobile Accessibility</li>
+      <li>Cross Browsing</li>
+      <li>Web Standards</li>
+      <li>WebView</li>
+      <li>Figma</li>
+      <li>Swiper</li>
+      <li>GSAP</li>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>VSCode</li>
+      <li>IntelliJ</li>
+      <li>UX/UI</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects  fade-up">
+  <div class="inner">
+
+    <h2>Projects</h2>
+
+    <div class="project-list">
+
+      <article class="project-card">
+        <span>2025</span>
+
+        <h3>뱅크잇 Renewal</h3>
+
+        <p>
+          웹 접근성·앱 접근성 심사 통과 및
+          하이브리드 웹앱 구조 개선
+        </p>
+
+        <ul>
+          <li>Web Accessibility</li>
+          <li>Hybrid App</li>
+          <li>Component Design</li>
+        </ul>
+
+        <a href="./pages/project-bankit.html">
+          View Project
+        </a>
+      </article>
+
+      <article class="project-card">
+        <span>2025</span>
+
+        <h3>샘표 즐겁게 요리해! Micro Site</h3>
+
+        <p>
+          반응형 마이크로 사이트 제작 및
+          YouTube 연동·관리자 기능 개발
+        </p>
+
+        <ul>
+          <li>Micro Site</li>
+          <li>Responsive</li>
+          <li>Admin Feature</li>
+        </ul>
+
+        <a href="./pages/project-sempio.html">
+          View Project
+        </a>
+      </article>
+
+      <article class="project-card">
+        <span>2024</span>
+
+        <h3>IBA Renewal</h3>
+
+        <p>
+          GSAP와 Lenis를 활용한
+          인터랙티브 사이트 리뉴얼
+        </p>
+
+        <ul>
+          <li>GSAP</li>
+          <li>Lenis</li>
+          <li>Scroll Interaction</li>
+        </ul>
+
+        <a href="./pages/project-iba.html">
+          View Project
+        </a>
+      </article>
+
+      <article class="project-card">
+        <span>2024</span>
+
+        <h3>Hyundai ACR</h3>
+
+        <p>
+          ScrollMagic 기반 스크롤 인터랙션과
+          SVG 인트로 애니메이션 마이크로 사이트
+        </p>
+
+        <ul>
+          <li>ScrollMagic</li>
+          <li>SVG Animation</li>
+          <li>Micro Site</li>
+        </ul>
+
+        <a href="./pages/project-hyundai.html">
+          View Project
+        </a>
+      </article>
+
+      <article class="project-card">
+        <span>2025</span>
+
+        <h3>알지 서비스 개선</h3>
+
+        <p>
+          프론트 UI·어드민 기능 개선 및
+          백엔드 수정까지 직접 담당한 유지보수 프로젝트
+        </p>
+
+        <ul>
+          <li>Front-end</li>
+          <li>Admin</li>
+          <li>Maintenance</li>
+        </ul>
+
+        <a href="./pages/project-algzi.html">
+          View Project
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact  fade-up">
+  <div class="inner">
+
+    <h2>Contact</h2>
+
+    <p>
+      웹 접근성과 사용자 경험을 함께 고민할 팀을 기다리고 있습니다.<br><br>
+      <b>좋은 서비스는 좋은 협업에서 비롯된다</b>고 믿기에,<br>
+      함께 성장할 수 있다면 어떤 연결이든 소중히 여기겠습니다.
+    </p>
+
+    <ul>
+      <li>Email : listentolion@naver.com</li>
+      <li>GitHub : github.com/aink729</li>
+    </ul>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="./js/common.js"></script>
+
 </body>
 </html>

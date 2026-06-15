@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyundai ACR | AK Portfolio</title>
+  <meta name="description" content="현대자동차 ACR 캠페인 마이크로 사이트 — ScrollMagic·SVG 애니메이션·Before&After 인터랙션">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="logo"><a href="/">Ain Kim</a></div>
+      <nav class="gnb">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="inner">
+
+        <a href="/" class="back-link">← 포트폴리오로 돌아가기</a>
+
+        <p class="project-year">2024</p>
+
+        <h1 class="project-title">Hyundai ACR</h1>
+
+        <p class="project-summary">
+          현대자동차 ACR(Automotive Carbon Reduction) 캠페인을 위한
+          마이크로 사이트로, 스크롤 기반 애니메이션·SVG 인트로·
+          Before & After 드래그 인터랙션을 구현했습니다.
+        </p>
+
+        <ul class="project-tags">
+          <li>ScrollMagic</li>
+          <li>SVG Animation</li>
+          <li>Micro Site</li>
+          <li>Interaction</li>
+        </ul>
+
+        <span class="project-status">이벤트 페이지 · 현재 비공개</span>
+
+      </div>
+    </section>
+
+    <!-- Meta -->
+    <section class="project-meta">
+      <div class="inner">
+        <dl class="meta-grid">
+          <div>
+            <dt>기간</dt>
+            <dd>2024. 06 — 2024. 08</dd>
+          </div>
+          <div>
+            <dt>역할</dt>
+            <dd>Web Publisher</dd>
+          </div>
+          <div>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </div>
+          <div>
+            <dt>기술스택</dt>
+            <dd>HTML5 · CSS3 · JavaScript · ScrollMagic · GSAP</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <div class="project-body">
+      <div class="inner">
+
+        <section class="project-section project-gallery fade-up">
+          <h2>Screenshots</h2>
+          <div class="gallery-grid gallery-grid--stack">
+            <!-- 이미지 파일을 ../assets/hyundai/ 폴더에 넣고 src 경로를 채워주세요 -->
+            <div class="gallery-item">
+              <img src="../assets/hyundai/01.jpg" alt="메인 화면 — SVG 인트로 애니메이션">
+            </div>
+            <div class="gallery-item">
+              <img src="../assets/hyundai/02.jpg" alt="스크롤 인터랙션 섹션">
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Background</h2>
+          <p>
+            현대자동차 ACR(Automotive Carbon Reduction) 캠페인의 일환으로
+            제작된 마이크로 사이트 프로젝트입니다.
+            단순한 정보 전달을 넘어, 캠페인 참여 시 기대되는 효과를
+            시각적으로 체감할 수 있는 인터랙티브한 경험을 구현하는 것이 목표였습니다.
+            글로벌 브랜드의 기준에 맞는 완성도와 일정 준수가 핵심 과제였습니다.
+          </p>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Responsibilities</h2>
+          <ul class="duty-list">
+            <li>ScrollMagic.js + ScrollTrigger.js를 활용한 섹션별 스크롤 기반 애니메이션 구현</li>
+            <li>SVG Path 드로잉 애니메이션을 인트로에 적용하여 로딩 체감 시간 단축</li>
+            <li>마우스 드래그 기반 Before & After 이미지 비교 인터랙션 구현</li>
+            <li>PC·모바일 터치 이벤트 병행 처리로 전 디바이스 인터랙션 대응</li>
+            <li>전 섹션 반응형 레이아웃 마크업 및 크로스 브라우저 대응</li>
+          </ul>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Key Challenge</h2>
+          <div class="challenge-grid">
+            <div class="challenge-item" data-label="Problem">
+              <p>
+                Before & After 드래그 컴포넌트가
+                mousedown/mousemove 이벤트만으로 구현되어
+                모바일·태블릿 터치 환경에서 전혀 작동하지 않았습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Solution">
+              <p>
+                touchstart/touchmove/touchend 이벤트를
+                mousedown/mousemove/mouseup과 병행 등록하고,
+                좌표 계산 로직을 공통 함수로 추상화하여
+                입력 방식에 무관하게 동일하게 작동하도록 개선했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Result">
+              <p>
+                모바일·태블릿·PC 전 디바이스에서
+                드래그 인터랙션 정상 작동.
+                캠페인 효과를 직관적으로 전달하는
+                핵심 인터랙션이 완성되었습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Retrospective</h2>
+          <div class="retro-block">
+            <p>
+              현대자동차라는 글로벌 브랜드의 캠페인을 담당하며
+              완성도와 일정 준수에 대한 책임감이 어느 때보다 컸습니다.
+              SVG 애니메이션과 스크롤 인터랙션을 동시에 다루며
+              브라우저가 화면을 렌더링하는 방식에 대한 이해가 깊어졌고,
+              마우스와 터치 이벤트를 통일하는 과정에서
+              이벤트 추상화의 중요성을 체감한 프로젝트였습니다.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <div class="inner">
+        <a href="/" class="btn">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+
+</body>
+</html>

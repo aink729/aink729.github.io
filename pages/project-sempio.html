@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sempio Micro Site | AK Portfolio</title>
+  <meta name="description" content="샘표 반응형 마이크로 사이트 제작 및 YouTube 연동·관리자 기능 개발">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="logo"><a href="/">Ain Kim</a></div>
+      <nav class="gnb">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="inner">
+
+        <a href="/" class="back-link">← 포트폴리오로 돌아가기</a>
+
+        <p class="project-year">2025</p>
+
+        <h1 class="project-title">Sempio Micro Site</h1>
+
+        <p class="project-summary">
+          샘표 캠페인을 위한 반응형 마이크로 사이트 제작 프로젝트로,
+          YouTube API 연동과 관리자 기능 개발까지
+          퍼블리싱 범위를 넘어 담당했습니다.
+        </p>
+
+        <ul class="project-tags">
+          <li>Micro Site</li>
+          <li>Responsive</li>
+          <li>YouTube API</li>
+          <li>Admin Feature</li>
+        </ul>
+        <a href="https://semiekids.cooking/" class="project-link" target="_blank" rel="noopener noreferrer">
+          사이트 방문하기
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Meta -->
+    <section class="project-meta">
+      <div class="inner">
+        <dl class="meta-grid">
+          <div>
+            <dt>기간</dt>
+            <dd>2025. 03 — 2025. 04</dd>
+          </div>
+          <div>
+            <dt>역할</dt>
+            <dd>Web Publisher · FE 개발</dd>
+          </div>
+          <div>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </div>
+          <div>
+            <dt>기술스택</dt>
+            <dd>HTML5 · CSS3 · JavaScript · YouTube IFrame API</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <div class="project-body">
+      <div class="inner">
+
+        <section class="project-section fade-up">
+          <h2>Background</h2>
+          <p>
+            샘표는 대한민국 대표 식품 브랜드로, 특정 캠페인·제품 홍보를 위한
+            마이크로 사이트 제작을 진행했습니다.
+            단순 반응형 마크업에서 나아가, 이번 프로젝트에서는
+            YouTube IFrame API를 활용한 영상 연동과
+            관리자 계정 목록 등 간단한 관리자 기능 개발까지 담당하며
+            퍼블리셔 영역을 처음으로 확장한 경험이었습니다.
+          </p>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Responsibilities</h2>
+          <ul class="duty-list">
+            <li>전 페이지 반응형 HTML · CSS 마크업 (모바일 퍼스트)</li>
+            <li>YouTube IFrame API를 활용한 영상 삽입 및 재생 제어 구현</li>
+            <li>스크롤 진입 시 영상 자동 재생 로직 구현 (IntersectionObserver 활용)</li>
+            <li>관리자 계정 목록 페이지 UI 및 기능 구현</li>
+            <li>모바일·태블릿·데스크탑 크로스 디바이스 대응 및 QA</li>
+          </ul>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Key Challenge</h2>
+          <div class="challenge-grid">
+            <div class="challenge-item" data-label="Problem">
+              <p>
+                YouTube IFrame API의 autoplay 정책이 브라우저별로 달라,
+                특정 환경에서 영상이 자동 재생되지 않거나
+                음소거 없이 재생이 차단되는 문제가 발생했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Solution">
+              <p>
+                autoplay 속성 대신 IntersectionObserver로
+                영상 영역 진입을 감지하고,
+                YouTube IFrame API의 playVideo()를 호출하는 방식으로
+                브라우저 정책을 우회하며 자연스러운 재생을 구현했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Result">
+              <p>
+                Chrome · Safari · Firefox 주요 브라우저 및
+                iOS · Android 모바일 환경에서
+                영상 재생 정상 작동 확인.
+                불필요한 데이터 소모 없이 뷰포트 진입 시 재생되는 UX 개선.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Retrospective</h2>
+          <div class="retro-block">
+            <p>
+              퍼블리셔로서 처음으로 관리자 기능 개발까지 담당하며,
+              UI와 데이터가 연결되는 흐름을 직접 경험했습니다.
+              단순히 화면을 그리는 것을 넘어, 데이터가 어떻게 관리되고
+              표시되는지 이해하게 되면서 개발팀과의 소통 방식도 달라졌습니다.
+              퍼블리셔의 역할 범위를 스스로 넓혀나갈 수 있다는 자신감을 얻은 프로젝트였습니다.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <div class="inner">
+        <a href="/" class="btn">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bankit Renewal | AK Portfolio</title>
+  <meta name="description" content="웹 접근성·앱 접근성 심사 통과 및 하이브리드 웹앱 구조 개선 프로젝트">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="logo"><a href="/">Ain Kim</a></div>
+      <nav class="gnb">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="inner">
+
+        <a href="/" class="back-link">← 포트폴리오로 돌아가기</a>
+
+        <p class="project-year">2025</p>
+
+        <h1 class="project-title">Bankit Renewal</h1>
+
+        <p class="project-summary">
+          핀테크 서비스 Bankit의 전면 리뉴얼 프로젝트로,
+          WCAG 2.1 AA 기준 웹·앱 접근성 심사 통과와
+          하이브리드 웹앱 구조 개선을 담당했습니다.
+        </p>
+
+        <ul class="project-tags">
+          <li>Web Accessibility</li>
+          <li>App Accessibility</li>
+          <li>Hybrid App</li>
+          <li>Component Design</li>
+        </ul>
+
+        <a href="https://bankit.kr/" class="project-link" target="_blank" rel="noopener noreferrer">
+          사이트 방문하기
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Meta -->
+    <section class="project-meta">
+      <div class="inner">
+        <dl class="meta-grid">
+          <div>
+            <dt>기간</dt>
+            <dd>2024. 12 — 2025. 05</dd>
+          </div>
+          <div>
+            <dt>역할</dt>
+            <dd>Web Publisher</dd>
+          </div>
+          <div>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </div>
+          <div>
+            <dt>기술스택</dt>
+            <dd>HTML5 · CSS3 · JavaScript · jQuery</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <div class="project-body">
+      <div class="inner">
+
+        <section class="project-section fade-up">
+          <h2>Background</h2>
+          <p>
+            Bankit은 모바일 중심의 핀테크 서비스로, iOS·Android 앱 내 WebView로 서비스되는
+            하이브리드 구조를 가지고 있습니다. 리뉴얼 이전 마크업은 시맨틱하지 않은
+            div 중심의 구조로, 스크린리더 사용자와 앱 접근성 심사에서 반복적으로
+            문제가 발생했습니다. 이번 프로젝트에서는 서비스 중단 없이 접근성 기준을 충족하는
+            마크업으로 전환하는 것이 핵심 과제였습니다.
+          </p>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Responsibilities</h2>
+          <ul class="duty-list">
+            <li>WCAG 2.1 AA 기준 전 페이지 웹 접근성 개선 및 심사 대응</li>
+            <li>Android·iOS 앱 접근성 항목 점검 및 개선 (포커스 순서, 레이블, 역할 지정)</li>
+            <li>React Native WebView 환경의 JS 브릿지 통신 구조 정리 및 문서화</li>
+            <li>버튼, 인풋, 모달 등 공통 컴포넌트 시맨틱 마크업 가이드 작성</li>
+            <li>갤럭시 토크백·iOS 보이스오버 환경 직접 테스트 및 QA팀 협력</li>
+          </ul>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Key Challenge</h2>
+          <div class="challenge-grid">
+            <div class="challenge-item" data-label="Problem">
+              <p>
+                기존 마크업이 모두 div + 커스텀 클래스로 구성되어
+                스크린리더가 역할·상태를 인식하지 못했고,
+                앱 접근성 심사에서 2회 연속 탈락하는 상황이었습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Solution">
+              <p>
+                전체 마크업을 시맨틱 HTML5 요소 기반으로 재작성하고,
+                role · aria-label · aria-expanded 등 ARIA 속성을
+                컴포넌트 단위로 체계화하여 적용했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Result">
+              <p>
+                웹 접근성 심사 1회 통과, 앱 접근성 심사 1회 통과.
+                보이스오버·토크백 환경에서 주요 플로우
+                스크린리더 동작 100% 검증 완료.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Retrospective</h2>
+          <div class="retro-block">
+            <p>
+              접근성은 "추가 작업"이 아니라 처음부터 설계에 포함되어야 한다는 것을 배웠습니다.
+              이미 완성된 마크업을 사후에 접근성 대응하면 구조 대부분을 다시 짜야 하는
+              비용이 발생합니다. 이 경험 이후 신규 작업 시 시맨틱 마크업과 ARIA 설계를
+              기획 단계부터 포함하는 방식으로 프로세스를 개선했습니다.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <div class="inner">
+        <a href="/" class="btn">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+
+</body>
+</html>
