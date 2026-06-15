@@ -404,6 +404,29 @@ h2::after {
   gap: .625rem; /* 10px */
 }
 
+.card-certs {
+  position: absolute;
+  bottom: 1.75rem;
+  right: 1.625rem;
+  display: flex;
+  align-items: center;
+  gap: .375rem;
+  pointer-events: none;
+}
+
+.card-certs img {
+  height: 2.5rem;
+  width: auto;
+  max-width: 4.5rem;
+  opacity: 0.4;
+  border-radius: .25rem;
+  transition: opacity var(--t) var(--ease);
+}
+
+.project-card:hover .card-certs img {
+  opacity: 0.85;
+}
+
 /* =========================
    Contact
 ========================= */
@@ -447,6 +470,73 @@ h2::after {
 /* =========================
    Project Pages — Site Link Button
 ========================= */
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .625rem;
+  margin-top: 1.75rem;
+}
+
+.project-links .project-link {
+  margin-top: 0;
+}
+
+.app-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .625rem 1.125rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: .8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: transparent;
+  transition: border-color var(--t) var(--ease),
+              color var(--t) var(--ease),
+              background var(--t) var(--ease),
+              gap var(--t) var(--ease);
+}
+
+.app-link::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.app-link::after {
+  content: "↗";
+  font-size: .75rem;
+}
+
+.app-link--ios::before {
+  background: #007AFF;
+}
+
+.app-link--android::before {
+  background: #3DDC84;
+}
+
+.app-link:hover {
+  gap: .75rem;
+}
+
+.app-link--ios:hover {
+  border-color: rgba(0,122,255,.35);
+  color: #5aabff;
+  background: rgba(0,122,255,.06);
+}
+
+.app-link--android:hover {
+  border-color: rgba(61,220,132,.35);
+  color: #3DDC84;
+  background: rgba(61,220,132,.06);
+}
 
 .project-link {
   display: inline-flex;
@@ -522,7 +612,10 @@ h2::after {
 }
 
 .gallery-item {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: unset;
+  height: auto;
+  align-self: start;
+  /* aspect-ratio: 16 / 9; */
   border-radius: 1rem;
   overflow: hidden;
   background: var(--surface);
@@ -541,14 +634,26 @@ h2::after {
 }
 
 
+.gallery-grid-3x {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-grid--stack {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
 .gallery-grid--stack .gallery-item {
   aspect-ratio: unset;
   height: auto;
+  align-self: start;
 }
 
 .gallery-grid--stack .gallery-item img {
+  width: 100%;
   height: auto;
-  object-fit: fill;
+  object-fit: cover;
+  display: block;
 }
 
 @media (max-width: 48em) {
