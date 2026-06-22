@@ -7,12 +7,12 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.1,
-  rootMargin: '0px 0px -40px 0px'
-});
+}, { threshold: 0.05 });
 
-// 브라우저가 opacity:0 초기 상태를 먼저 렌더링한 뒤 관찰 시작
+// 이중 rAF: 브라우저가 opacity:0 초기 상태를 완전히 렌더링한 뒤 관찰 시작
+// 모바일에서 transition skip 방지
 requestAnimationFrame(() => {
-  fadeElements.forEach(el => observer.observe(el));
+  requestAnimationFrame(() => {
+    fadeElements.forEach(el => observer.observe(el));
+  });
 });
