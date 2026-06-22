@@ -285,6 +285,18 @@ h2::after {
   background: var(--accent-glow);
 }
 
+.skill-list li.learning {
+  border-style: dashed;
+  border-color: rgba(124,158,248,.4);
+  color: var(--accent);
+}
+
+.skill-list li.learning::after {
+  content: " ✱";
+  font-size: .6rem;
+  opacity: .7;
+}
+
 /* =========================
    Projects
 ========================= */
@@ -658,7 +670,7 @@ h2::after {
 
 @media (max-width: 48em) {
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
 }
 
