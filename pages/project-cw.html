@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cauworks 메인 리뉴얼 | AK Portfolio</title>
+  <meta name="description" content="GSAP와 fullpage.js를 활용한 코즈웍스 홈페이지 메인 인터랙션 리뉴얼 프로젝트">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="logo"><a href="/">AK Portfolio</a></div>
+      <nav class="gnb">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="inner">
+
+        <a href="/" class="back-link">← 포트폴리오로 돌아가기</a>
+
+        <p class="project-year">2022</p>
+
+        <h1 class="project-title">Cauworks 홈페이지 메인 리뉴얼</h1>
+
+        <p class="project-summary">
+          GSAP 애니메이션과 fullpage.js 기반 섹션 전환을 결합하여
+          코즈웍스 자사 홈페이지 메인 페이지를 전면 리뉴얼했습니다.
+          PC·모바일 모든 환경에서 충돌 없이 부드러운 인터랙션을 구현하는 것이 핵심 과제였습니다.
+        </p>
+
+        <ul class="project-tags">
+          <li>Responsive</li>
+          <li>Animation</li>
+          <li>Fullpage.js</li>
+          <li>GSAP</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="../assets/cw/renewal.html" class="project-link" target="_blank" rel="noopener noreferrer">
+            리뉴얼 프리뷰 보기
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="project-meta">
+      <div class="inner">
+        <dl class="meta-grid">
+          <div>
+            <dt>기간</dt>
+            <dd>2022. 08</dd>
+          </div>
+          <div>
+            <dt>역할</dt>
+            <dd>Web Publisher</dd>
+          </div>
+          <div>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </div>
+          <div>
+            <dt>기술스택</dt>
+            <dd>HTML5 · CSS3 · jQuery · GSAP · fullpage.js</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="project-body">
+      <div class="inner">
+
+        <section class="project-section fade-up">
+          <h2>Preview</h2>
+          <div class="video-wrapper">
+            <video src="../assets/cw/preview_cw.mp4" muted loop playsinline></video>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Background</h2>
+          <p>
+            코즈웍스는 웹 에이전시로, 자사 홈페이지 메인 페이지 리뉴얼을 통해
+            서비스 역량을 더 직관적이고 인상적으로 전달하는 것이 목표였습니다.
+            fullpage.js 기반의 섹션 전환에 GSAP 애니메이션을 결합하여,
+            회사의 인터랙티브한 작업 스타일을 사이트 자체로 보여주는 방향으로 기획했습니다.
+          </p>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Responsibilities</h2>
+          <ul class="duty-list">
+            <li>fullpage.js 기반 섹션 전환 구조 설계 및 전체 구현</li>
+            <li>GSAP를 활용한 섹션 진입 타이밍 애니메이션 구현</li>
+            <li>PC · 태블릿 · 모바일 반응형 레이아웃 대응</li>
+            <li>PC(mousewheel) · 모바일(touchmove) 커스텀 스크롤 이벤트 제어</li>
+            <li>크로스 브라우징 검수 및 전반 QA</li>
+          </ul>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Key Challenge</h2>
+          <div class="challenge-grid">
+            <div class="challenge-item" data-label="Problem">
+              <p>
+                fullpage.js가 스크롤 이벤트를 자체적으로 점유하는 구조라,
+                GSAP 및 커스텀 휠 스크립트와 동시에 사용할 때
+                이벤트 충돌이 발생했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Solution">
+              <p>
+                mousewheel(PC) · touchmove(Mobile) 이벤트를
+                직접 제어하는 스크립트를 별도 작성하여
+                fullpage.js와 병행 동작하도록 구조를 조정했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Result">
+              <p>
+                PC · 모바일 모두 섹션 전환과 GSAP 애니메이션이
+                충돌 없이 매끄럽게 동작하는 인터랙션 환경 완성.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Retrospective</h2>
+          <div class="retro-block">
+            <p>
+              라이브러리를 가져다 쓰는 것과, 구조를 이해하고 쓰는 것은 다르다는 걸 체감한 프로젝트였습니다.
+              fullpage.js처럼 스크롤 이벤트를 강하게 점유하는 라이브러리일수록,
+              내부 동작 흐름을 먼저 파악한 뒤 커스텀 스크립트와의 충돌 지점을 예측하며 접근해야 합니다.
+              이 경험 이후로 새 라이브러리를 도입할 때 이벤트 처리 방식부터 확인하는 습관이 생겼습니다.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <div class="inner">
+        <a href="/#projects" class="btn">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    const video = document.querySelector('.video-wrapper video');
+    if (video) {
+      const vObs = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { video.play(); }
+          else { video.pause(); }
+        });
+      }, { threshold: 0.25 });
+      vObs.observe(video);
+    }
+  </script>
+
+</body>
+</html>

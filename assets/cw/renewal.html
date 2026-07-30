@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>코즈웍스</title>
+    <meta id="meta-element" property="og:title" content="코즈웍스" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, width=device-width" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="vendor/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/css/common.css" />
+
+    <script type="text/javascript" src="vendor/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="vendor/js/jquery.easing.1.3.min.js"></script>
+
+    <script type="text/javascript" src="vendor/js/ui.js"></script>
+    <script src="vendor/js/jquery.tmpl.min.js"></script>
+    <script src="vendor/js/tms.util.js"></script>
+
+    <script src="vendor/js/swiper.min.js"></script>
+    <script src="vendor/js/moment.js"></script>
+    <script src="vendor/js/moment-with-locales.min.js"></script>
+    <script src="vendor/js/moment-timezone-with-data.js"></script>
+
+    <script type="text/javascript" src="vendor/js/common.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="vendor/css/custom.css" />
+    <!-- renewal -->
+    <link rel="stylesheet" href="vendor/css/fullPage.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script type="text/javascript" src="vendor/js/tms.validation.js"></script>
+    <script type="text/javascript" src="vendor/js/tms.inputForm.js"></script>
+    <script type="text/javascript" src="vendor/js/tms.tables.js"></script>
+  </head>
+  <body>
+
+    
+    <aside id="pageLoading" class="on">
+      <div class="inner">
+        <!-- svg start-->
+        <div class="cw_wrap">
+          <h2 class="tit">
+            <span class="blind">코즈웍스</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 474 245">
+              <defs>
+                <clipPath id="p01">
+                  <path
+                    d="M227.43,17.29l-.51-.93c-.17-.31-.33-.61-.51-.91-.33-.58-.68-1.16-1.04-1.65l-.54-.79c-.41-.6-.84-1.16-1.28-1.65l-.46-.55c-.51-.61-1.04-1.19-1.65-1.75l-.31-.31c-.62-.6-1.25-1.17-1.91-1.65l-.23-.18c-.69-.56-1.42-1.11-2.16-1.65l-.2-.13c-.76-.5-1.53-.98-2.34-1.41l-.25-.13c-.79-.41-1.65-.81-2.4-1.16l-.36-.13c-.79-.33-1.6-.63-2.42-.89l-.49-.15c-.77-.23-1.65-.43-2.37-.61l-.66-.12c-.76-.15-1.5-.26-2.25-.35l-.97-.1C201.49,.08,200.86,0,200.24,0H103.58C46.53,0,.26,47.12,0,104.35v.2c.26,57.24,46.53,104.88,103.58,104.88h58.3c4.96-.21,9.79-1.63,14.07-4.14,4.28-2.51,7.89-6.03,10.51-10.26,2.11-3.45,3.51-7.28,4.14-11.27,.63-3.99,.47-8.08-.47-12.01-.94-3.93-2.65-7.64-5.02-10.91-2.37-3.27-5.36-6.04-8.8-8.15-4.8-2.98-10.32-4.58-15.97-4.63h0l-57.15-.1c-27.99,0-40.96-15.43-41.08-43.43-.12-28.01,13.04-42.99,41.08-42.99h77.6l63.57,130.52c1.76,3.66,4.23,6.93,7.25,9.63,3.02,2.7,6.55,4.78,10.37,6.11,3.82,1.33,7.87,1.89,11.91,1.65,4.04-.24,7.99-1.28,11.63-3.05,7.29-3.64,12.85-10.03,15.45-17.78,2.6-7.75,2.04-16.22-1.58-23.55L227.43,17.29Z"
+                  />
+                </clipPath>
+                <clipPath id="p02">
+                  <path d="M441.98,3.1c-3.62-1.77-7.55-2.8-11.56-3.04-4.01-.24-8.04,.33-11.84,1.66-3.8,1.33-7.3,3.41-10.3,6.1-3,2.7-5.45,5.97-7.2,9.62h0l-44.49,91.7-44.49-91.7c-1.75-3.65-4.19-6.92-7.2-9.62s-6.5-4.77-10.3-6.11c-3.8-1.33-7.82-1.9-11.84-1.66-4.02,.24-7.95,1.27-11.56,3.04-7.27,3.64-12.81,10.04-15.41,17.79-2.6,7.75-2.03,16.23,1.56,23.57h0l71.61,147.61c1.94,3.98,4.7,7.5,8.09,10.32,3.39,2.82,7.35,4.88,11.59,6.04l.54,.15c.62,.17,1.26,.28,1.89,.4,.36,0,.72,.17,1.1,.21,.38,.05,1,.1,1.49,.15,.49,.05,.97,.12,1.46,.15h2.94c.49,0,.97-.1,1.46-.15,.49-.05,1-.08,1.49-.15l1.1-.21c.64-.12,1.26-.23,1.89-.4,.18,0,.38-.12,.57-.16,.82-.23,1.64-.48,2.43-.76,7.52-2.75,13.68-8.33,17.21-15.57L455.83,44.47c3.6-7.34,4.16-15.82,1.57-23.58-2.6-7.76-8.14-14.16-15.41-17.8h0Z" />
+                </clipPath>
+              </defs>
+              <g class="svg-bg">
+                <path clip-path="url(#p01)" d="M183,191.1c-44.7-3-50,0.6-70-4.1c-22.2-5.2-40.7-9.8-55-27c-22.4-26.8-15.4-61.1-15-63c8-36,40.4-51.4,46-54c6.3-3,8.4,1.1,67-1c48.2-1.7,55.3-0.7,60,2c0,0,24.7,45.4,43,83.6c16.9,35.1,27.8,51.6,47,92.4" />
+                <path class="p02" clip-path="url(#p02)" d="M283.1,13c29.4,55.2,43,87.6,49,109c6.2,22.3,19.6,42.1,27,64c0.6,1.9,6.5,14.8,10.9,16c5.6,1.5,7.9-12.6,10.1-15c24.8-27.8,36-81,36-81c14.9-24,18-60.5,50-100"/>
+              </g>
+              <g class="svg-main">
+                <path clip-path="url(#p01)" d="M183,202.1c-44.7-3-50,0.6-70-4.1c-22.2-5.2-40.7-9.8-55-27c-22.4-26.8-15.4-61.1-15-63c8-36,40.4-51.4,46-54
+                c6.3-3,8.4,1.1,67-1c48.2-1.7,55.3-0.7,60,2c0,0,24.7,45.4,43,83.6c16.9,35.1,27.8,51.6,47,92.4" />
+                <path class="p02" clip-path="url(#p02)" d="M283.1,13c29.4,55.2,43,87.6,49,109c6.2,22.3,19.6,42.1,27,64c0.6,1.9,6.5,14.8,10.9,16c5.6,1.5,7.9-12.6,10.1-15c24.8-27.8,36-81,36-81c14.9-24,18-60.5,50-100"/>
+              </g>
+            </svg>
+
+            <script>
+              //sec1 svg
+              const mainGroup = document.querySelector('.svg-main');
+              const mainPaths = mainGroup.querySelectorAll('path');
+              mainPaths.forEach((path, index) => {
+                const length = path.getTotalLength();
+                path.style.setProperty('--length', length);
+                // path.style.setProperty('--delay', index * 100 + 'ms');
+                path.style.setProperty('--duration', length * 0.6 + 'ms');
+              });
+              $(window).ready(function () {
+                setTimeout(function () {
+                  var cw = $('.sec1 .cw_wrap');
+                  cw.addClass('go');
+                  // var winHeight = $(window).innerHeight();
+                  // window.scrollTo({ left: 0, top: winHeight, behavior: "smooth" });
+                }, 1200);
+              });
+            </script>
+          </h2>
+      </div>
+      <div class="bg_black"></div>
+    </aside>
+    <script>
+      $(function () {
+        // $('#pageLoading').addClass('on');
+        $('html, body').css({ overflow: 'hidden' });
+        setTimeout(function () {
+          $('#pageLoading').removeClass('on');
+          $('#pageLoading').addClass('off');
+          $('html, body').css({ overflow: 'visible' });
+        }, 800);
+        setTimeout(function () {
+          $('#pageLoading').removeClass('off');
+        }, 1600);
+      });
+    </script>
+
+    
+    <header id="header">
+      <div class="inner_box">
+        <h1 class="logo">
+          <a href="renewal.html"><span class="blind">코즈웍스</span></a>
+        </h1>
+        <button type="button" class="btn_menu"><span class="menu">MENU</span><span class="close">CLOSE</span></button>
+        <nav id="gnb" class="gnb">
+          <ul>
+            <li><a href="renewal.html">Home</a></li>
+            <li><a href="https://www.causeworks.co.kr/page/about">About</a></li>
+            <li><a href="https://www.causeworks.co.kr/page/works/list">Works</a></li>
+            <li><a href="https://www.causeworks.co.kr/page/news">News</a></li>
+            <li><a href="https://www.causeworks.co.kr/page/careers">Careers</a></li>
+            <li><a href="https://www.causeworks.co.kr/page/contact">Contact</a></li>
+            <li>
+              <a href="http://iba.or.kr/ " target="_blank" class="iba">
+                <span class="blind">iba</span>
+              </a>
+              <a href="https://basket.fund/" target="_blank" class="bask">
+                <span class="blind">바스켓</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="alliance">
+          <a href="https://www.causeworks.co.kr/page/contact" target="_blank">코즈웍스 제휴 문의하기</a>
+          <a href="#" target="_blank">마케팅 문의/의뢰하기</a>
+          <button class="btn_menu_mo"></button>
+        </div>
+      </div>
+      <!-- class : inner_box -->
+
+    <div id="nav" class="nav">
+      <ul>
+        <!-- <li><a href="#01" data-menuanchor="01" class="active"></a></li>
+        <li class="blind"><a href="#02" data-menuanchor="02"></a></li>
+        <li class="blind"><a href="#03" data-menuanchor="03"></a></li>
+        <li class="blind"><a href="#04" data-menuanchor="04"></a></li>
+        <li class="blind"><a href="#05" data-menuanchor="05"></a></li>
+        <li><a href="#06" data-menuanchor="06"></a></li>
+        <li><a href="#07" data-menuanchor="07"></a></li>
+        <li><a href="#08" data-menuanchor="08"></a></li> -->
+        
+        <li><a href="#01" class="active"></a></li>
+        <li class="blind"><a href="#02" ></a></li>
+        <li class="blind"><a href="#03" ></a></li>
+        <li class="blind"><a href="#04"></a></li>
+        <li class="blind"><a href="#05"></a></li>
+        <li><a href="#06"></a></li>
+        <li><a href="#07"></a></li>
+        <li><a href="#08"></a></li>
+
+      </ul>
+    </div>
+
+    </header>
+    <!--header end-->
+
+
+
+    <div id="fullpage">
+      <div id="section_01" class="section fp-noscroll main-banner-cell main-banner-01" data-anchor="01">
+        <div class="txt_wrap">
+          <div class="txt_inner">
+            <div class="typ_txt">
+              <div class="txt_box">
+                <p class="typing_txt">
+                  <span class="txt01">자기주도적, 가치소비, 의미 있는 삶이 트렌드인 시대</span>
+                  <span class="txt02">공익이 우리 일상에 한발짝 더 가까워진 지금</span>
+                </p>
+                <p class="typing on">
+                  <span class="txt01"></span>
+                  <span class="txt02"></span>
+                </p>
+                <p class="typingMo_txt">
+                  <span class="txt01">자기주도적, 가치소비,</span>
+                  <span class="txt02">의미 있는 삶이 트렌드인 시대</span>
+                  <span class="txt03">공익이 우리 일상에</span>
+                  <span class="txt04">한발짝 더 가까워진 지금</span>
+                </p>
+                <p class="typingMo on">
+                  <span class="txt01"></span>
+                  <span class="txt02"></span>
+                  <span class="txt03"></span>
+                  <span class="txt04"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="port_wrap">
+            <p class="port_name">
+              <strong>H&M</strong>지속가능한 패션 캠페인
+            </p>
+          </div>
+        </div>
+        <div class="visual-wrap">
+          <div class="visual_img"></div>
+        </div>
+      </div>
+      <!-- main-banner-01 end -->
+      <div id="section_02" class="section fp-noscroll main-banner-cell main-banner-02" data-anchor="02">
+        <div class="txt_wrap">
+          <div class="display-table">
+            <div class="display-table-cell">
+              <div class="txt_inner">
+                <div class="txt_box">
+                  <div class="line_bar"><span class="bar"></span></div>
+                  <h2 class="txt">이런 일상을 만나기까지<br />코즈웍스가 함께했습니다</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="port_wrap">
+            <p class="port_name">
+              <strong>우리금융지주</strong>우리동네 善한 가게
+            </p>
+          </div>
+        </div>
+        <div class="visual-wrap">
+          <div class="visual_img"></div>
+        </div>
+      </div>
+      <!-- main-banner-02 end -->
+      <div id="section_03" class="section fp-noscroll main-banner-cell main-banner-03" data-anchor="03">
+        <div class="txt_wrap">
+          <div class="display-table">
+            <div class="display-table-cell">
+              <div class="txt_inner">
+                <div class="txt_box">
+                  <div class="line_bar"><span class="bar"></span></div>
+                  <h2 class="txt">세상을 위한 좋은 변화에 앞장서<br />역할을 다 해온 우리는</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="port_wrap">
+            <p class="port_name">
+              <strong>맥도날드</strong>2021 Accelerating The Arches
+            </p>
+          </div>
+        </div>
+        <div class="visual-wrap">
+          <div class="visual_img"></div>
+        </div>
+      </div>
+      <!-- main-banner-03 end -->
+      <div id="section_04" class="section fp-noscroll main-banner-cell main-banner-04" data-anchor="04">
+        <div class="txt_wrap">
+          <div class="display-table">
+            <div class="display-table-cell">
+              <div class="txt_inner">
+                <div class="txt_box">
+                  <div class="line_bar"><span class="bar"></span></div>
+                  <h2 class="txt">ESG가 필수가 된 지금,<br />그 역량과 가능성이 무한하며</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="port_wrap">
+            <p class="port_name">
+              <strong>KCC글라스 홈씨씨인테리어</strong>홈씨씨교실
+            </p>
+          </div>
+        </div>
+        <div class="visual-wrap">
+          <div class="visual_img"></div>
+        </div>
+      </div>
+      <!-- main-banner-04 end -->
+      <div id="section_05" class="section fp-noscroll main-banner-cell main-banner-05" data-anchor="05">
+        <div class="txt_wrap">
+          <div class="display-table">
+            <div class="display-table-cell">
+              <div class="txt_inner">
+                <div class="txt_box">
+                  <!-- <div class="line_bar"><span class="bar"></span></div> -->
+                  <h2 class="txt">더 나은 ESG, 더 나은 세상을<br />향한 방향을 제시합니다</h2>
+                </div>                  
+                <a href="https://www.causeworks.co.kr/page/about" class="btn_go_about" target="_blank">About</a>
+              </div>
+            </div>
+          </div>
+          <div class="port_wrap">
+            <p class="port_name">
+              <strong>임팩트비즈니스재단</strong>ESG 실천 기부 챌린지 '알지?'
+            </p>
+          </div>
+        </div>
+        <div class="visual-wrap">
+          <div class="visual_img"></div>
+        </div>
+      </div>
+      <!-- main-banner-05 end -->
+      <div id="section_06" class="section fp-noscroll main-banner-cell main-banner-06" data-anchor="06">
+        <div class="txt_wrap">
+          <div class="display-table">
+            <div class="display-table-cell">
+              <div class="txt_inner">
+                <div class="txt_box ani_01">
+                  <p class="txt">ESG</p>
+                </div>
+                <div class="txt_box ani_02">
+                  <h2 class="txt">CAUSEWORKS</h2>
+                  <p>GUIDE TO BETTER</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="visual-wrap">
+          <div class="video_box">
+            <video autoplay muted playsinline loop data-autoplay data-keepplaying>
+              <source src="images/sec06_bg.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <!-- main-banner-06 end -->
+      <div id="section_07" class="section fp-noscroll main-banner-cell main-banner-07"  data-anchor="07">
+        <div class="txt_wrap">
+          <div class="display-table">
+            <div class="display-table-cell">
+              <div class="txt_inner">
+                <div class="left">
+                  <h2 class="tit">
+                    우리는 지난 <span class="line_down_mo"></span><strong>10년간의 노하우</strong>로<br />
+                    더 나은 ESG, 나아가 더 나은 <span class="line_down_mo"></span>세상을 향한 <span class="line_down"></span><strong>방향을 제시합니다</strong>
+                  </h2>
+                  <p>코즈웍스의 전문성은 이미 많은 파트너들이 인정해<br />다양한 ESG 프로젝트를 함께 만들어가고 있습니다.</p>
+                  <!-- <p class="eng">We will move<br />forward without<br />stopping</p> -->
+                </div>
+                <div class="right">
+                  <ul>
+                    <li class="right_01">
+                      <p>
+                        코즈웍스가<br />
+                        ESG를 알려온 시간<strong class="">11</strong>
+                      </p>
+                    </li>
+                    <li class="right_02">
+                      <p>
+                        코즈웍스와<br />
+                        함께한 파트너 수<strong class="">279</strong>
+                      </p>
+                    </li>
+                    <li class="right_03">
+                      <p>
+                        코즈웍스가 만든<br />
+                        ESG 프로젝트 수<strong class="">825</strong>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="galaxy"></div>
+            </div>
+          </div>
+        </div>
+        <div class="visual-wrap">
+          <div class="visual_img"></div>
+        </div>
+      </div>
+      <!--main-banner-07 end -->
+      <div id="section_08" class="section fp-auto-height main-banner-cell main-banner-08"  data-anchor="08">
+        <div class="sect_top">
+          <div class="txt_wrap">
+            <div class="display-table">
+              <div class="display-table-cell">
+                <div class="txt_inner">
+                  <div class="left">
+                    <div class="txt_box">
+                      <h2 class="tit">사람들이<br />코즈웍스를 선택한<br />또 하나의 이유</h2>
+                      <p>코즈웍스는 고객사에 최적화된 컨설팅으로<br />다양한 서비스를 제공합니다.</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="txt_box">
+                      <h2 class="tit">
+                        A부터 Z까지<br />
+                        <strong>이 모든 것을 한번에!</strong>
+                      </h2>
+                      <span>*희망하는 서비스를 선택해 진행 가능합니다.</span>
+                    </div>
+                    <ul class="service_list">
+                      <li>
+                        <h3><strong>ESG business consulting</strong>ESG 사업 컨설팅</h3>
+                        <p>기업의 기존 ESG사업을 발전 또는 ESG 아이덴티티 확립을 위한 브랜딩 컨설팅을 제공합니다.</p>
+                      </li>
+                      <li>
+                        <h3><strong>ESG Business planning and operation</strong>ESG 사업 기획 및 운영</h3>
+                        <p>
+                          ESG를 전문적으로 다루는 팀이 별도 세팅되어 있으며<br />
+                          팀원 80% 이상이 사회복지사로 뛰어난 사업 운영 경력과 역량을 갖추고 있습니다.
+                        </p>
+                      </li>
+                      <li>
+                        <h3><strong>ESG content creation</strong>ESG 콘텐츠 제작</h3>
+                        <p>기업의 ESG사업을 대중에게 알리기 위해 높은 퀄리티는 물론 <span class="line_down"></span>진정성이 담긴 콘텐츠를 지속적으로 제작 및 배포합니다.</p>
+                      </li>
+                      <li>
+                        <h3><strong>ESG business marketing</strong>ESG 마케팅</h3>
+                        <p>보다 효과적으로 알릴 수 있는 홍보 방식과 채널을 제안하고 운영합니다.<br />코즈웍스의 마케팅은 온·오프라인을 넘나듭니다.</p>
+                        <a href="" class="btn_go_marketing" target="_blank">코즈웍스 마케팅 바로가기 </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- top end -->
+        <div class="sect_bot">
+          <div class="subsect subsect_01">
+            <h2 class="tit">OUR SERVICE</h2>
+            <div class="cont_box">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide_01">
+                    <a href="https://www.causeworks.co.kr/page/service/viral" target="_blank">
+                      <div class="txt_box">
+                        <h3>ESG 사업 기획 및 운영</h3>
+                        <p>기업의 지속 가능한 가치가 임팩트 있는 사업으로 펼쳐질 수 있도록 ESG 경영 전략을 제안합니다.</p>
+                      </div>
+                      <div class="bg"></div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slide_02">
+                    <a href="https://www.causeworks.co.kr/page/service/happybean" target="_blank">
+                      <div class="txt_box">
+                        <h3>네이버 해피빈 캠페인</h3>
+                        <p>기업 사회공헌 또는 공공기관의 공감 캠페인을 진행하며 제작, 홍보, 운영을 지원합니다.</p>
+                      </div>
+                      <div class="bg"></div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slide_03">
+                    <a href="https://www.causeworks.co.kr/page/service/web" target="_blank">
+                      <div class="txt_box">
+                        <h3>웹 사이트 제작 및 운영</h3>
+                        <p>기업에 맞는 컨셉을 도출해 UI UX를 설계하며 유저 동선을 고려해 공감 포인트를 담아냅니다.</p>
+                      </div>
+                      <div class="bg"></div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slide_04">
+                    <a> <!-- 마케팅 페이지로 이동 -->
+                      <div class="txt_box">
+                        <h3>마케팅 솔루션</h3>
+                        <p>콘텐츠에 브랜드를 녹여내 대중의 마음을 사로잡는 가치 있는 마케팅 솔루션을 제공합니다.</p>
+                      </div>
+                      <div class="bg"></div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slide_05">
+                    <a href="https://www.causeworks.co.kr/page/service/contents" target="_blank">
+                      <div class="txt_box">
+                        <h3>Etc.</h3>
+                        <p>디지털 콘텐츠 제작을 넘어 영상, 인쇄물까지 시너지 효과를 낼 수 있는 모든 콘텐츠를 제작합니다.</p>
+                      </div>
+                      <div class="bg"></div>
+                    </a>
+                  </div>
+                </div>
+                <!--swiper-wrapper-->
+                <div class="swiper-pagination"></div>
+                <!-- swiper pagination  -->
+              </div>
+              <!--swiper-container-->
+            </div>
+          </div>
+          <!--subsect_01 end -->
+          <div class="subsect subsect_02">
+            <div class="txt_box">
+              <h2 class="tit">
+                더 나은 <span class="line_down"></span>코즈웍스를 만드는 <strong>사람들의 <span class="line_down"></span>이야기</strong>
+              </h2>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="top">
+                    <h3>창의적인<br />기획력을 보여준<br />코즈웍스</h3>
+                    <p><strong>한국전기안전공사</strong>홍보실 김두희 대리</p>
+                  </div>
+                  <div class="bot">
+                    <p>
+                      한국전기안전공사와 코즈웍스의 인연도 어느덧 5년이라는 시간이 흘렀습니다.<br />
+                      항상 창의적인 기획을 보여준 코즈웍스와 앞으로도 새로운 ESG문화를 함께 만들어 나가겠습니다.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="top">
+                    <h3>가치를 효율적으로<br />전달할 수 있도록<br />솔루션을 제공해 준<br />코즈웍스</h3>
+                    <p><strong>우리금융지주</strong>ESG경영부 이태재 부부장</p>
+                  </div>
+                  <div class="bot">
+                    <p>우리금융그룹이 추구하는 가치를 효율적으로 전달할 수 있도록 전문성 있는 솔루션을 제공한 코즈웍스! 앞으로도 코즈웍스와 함께 지속가능한 가치를 발굴하고 실천할 수 있길 기대합니다.</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="top">
+                    <h3>
+                      완성도 높은<br />
+                      결과물은 물론<br />
+                      깔끔한 업무 프로세스
+                    </h3>
+                    <p><strong>한국해비타트</strong>커뮤니케이션팀 송신혜 팀장</p>
+                  </div>
+                  <div class="bot">
+                    <p>완성도 높은 결과물은 물론, 풍부한 공익 사업 경험과 노하우가 코즈웍스만의 강점이라고 생각합니다. 앞으로 의미 있는 프로젝트를 함께할 수 있길 기대합니다.</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="top">
+                    <h3>
+                      ESG에 대한<br />
+                      생각의 깊이를<br />
+                      더해준 곳
+                    </h3>
+                    <p><strong>코즈웍스</strong>ESG협력팀 정준용 팀장</p>
+                  </div>
+                  <div class="bot">
+                    <p>“왜 비누를 파는 것처럼 인류애를 팔 수는 없을까?” 연구심리학자인 Gerhard Weibe 박사의 위 질문에 대하여, 답을 찾고 실현해 나가는 곳이 바로 코즈웍스입니다.</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="top">
+                    <h3>ESG를 쉽고<br />재미있는 모습으로<br />재탄생 시키는 곳</h3>
+                    <p><strong>코즈웍스</strong>임팩트비지니스실 송영대 이사</p>
+                  </div>
+                  <div class="bot">
+                    <p>감동은 있지만 흥미롭지 않았던 ESG 사업이 코즈웍스의 손을 거치면서 재밌어졌다는 고객과 참여자들의 이야기를 들었을 때 감사함과 함께 사명감을 느끼곤 합니다.</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="top">
+                    <h3>나를 가치 있는 사람으로<br />만들어주는 곳</h3>
+                    <p><strong>코즈웍스</strong>ESG크리에이티브팀 이지은 매니저</p>
+                  </div>
+                  <div class="bot">
+                    <p>단순 커리어만 쌓는 것이 아니라 가치 있을 일을 발굴하고 만들어 나가면서, 내 자신 또한 가치 있는 사람이 되어가는 느낌을 주는 곳입니다.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper pagination  -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!--subsect_02 end -->
+          <div class="subsect subsect_03">
+            <div class="contact_box">
+              <div class="inner_box">
+                <h2 class="tit"><strong>코즈웍스</strong>와 더 나은 ESG,<br />더 나은 세상을 만들고 싶나요?</h2>
+                <div class="btn_wrap">
+                  <a href="https://www.causeworks.co.kr/page/careers" class="btn_go"><span>입사지원</span>코즈웍스팀에 합류하기</a>
+                  <a href="https://www.causeworks.co.kr/page/contact" class="btn_go"><span>사업문의</span>프로젝트 문의/의뢰하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--subsect_03 end -->
+          <div class="subsect subsect_04">
+            <footer id="footer">
+              <div class="news_letter">
+                <div class="inner_box">
+                  <p class="txt">바쁜 여러분을 위해 <strong>가치 있는 인싸이트</strong>만 공유합니다.</p>
+                  <div class="it_box">
+                    <input type="text" class="enrollNews_input" placeholder="메일 주소를 입력하세요." />
+                    <button type="submit" class="enrollNews">가치인싸 뉴스레터 구독</button>
+                  </div>
+                </div>
+              </div>
+              <div class="info">
+                <div class="inner_box">
+                  <div class="left">
+                    <h2 class="company"><span class="blind">(주) 코즈웍스</span></h2>
+                    <div class="c_info">
+                      <address class="address">서울특별시 서초구 서운로 13, <span class="line_mo"></span>중앙로얄오피스텔 2101호</address>
+                      <p class="contact">TEL. 02-6956-7956 <span class="line_mo"></span>FAX. 02-6956-7955 <span class="line_mo"></span> <a href="mailto:contact_us@causeworks.co.kr">E-MAIL. contact_us@causeworks.co.kr</a></p>
+                      <p class="copyright">&copy; Causeworks Corp. All Rights Reserved</p>
+                    </div>
+                  </div>
+                  <div class="right">                    
+                    <div class="family_site">
+                      <ul style="display: none">
+                        <li><a href="" target="_blank" class="link_mk">마케팅사업팀</a></li>
+                        <li><a href="https://basket.fund/" target="_blank">Basket</a></li>
+                        <li><a href="https://iba.or.kr/" target="_blank">IBA</a></li>
+                      </ul>
+                      <button class="btn_family_site">Family Site</button>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="https://homepage.causeworks.kr/front/images/compressed.pdf" download="[코즈웍스] 회사소개서_compressed" class="footer_pdf">회사소개서</a>
+                      <a href="#" class="btn_privacy" onclick="layer_OPEN('#popup_privacy');">개인정보처리방침</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- footer end -->
+          </div>
+          <!--subsect_04 end -->
+        </div>
+        <div class="visual-wrap">
+          <div class="visual_img"></div>
+        </div>
+      </div>
+      <!--main-banner-08 end -->
+    </div>
+    <!-- fullpage end -->
+
+    <!-- popup -->
+    <div id="popup_all">
+      <!-- 개인정보 처리방침 팝업 -->
+      <div id="popup_privacy" style="display: none; filter: alpha(opacity=0); opacity: 0">
+        <div class="bg" onclick="layer_CLOSE('#popup_privacy');"></div>
+        <div class="out_layer_box">
+          <div class="in_layer_box">
+            <h2 class="title">개인정보 처리방침</h2>
+            <div class="cont">
+              <h3 class="tit_01">개인정보 수집이용에 대한 동의</h3>
+              <p class="txt_01">
+                ㈜코즈웍스 (이하 '회사' 라 합니다) 는 이용자의 개인정보를 중요시하며, 이용자의 개인정보는 다음과 같은 정책에 따라 수집 및 이용됩니다. 회사는 해당 목적에 연관되는 개인정보만을 수집하며, 수집된 정보를 투명하고 안전하게 보호 관리 할 것을 약속합니다. 이에 개인정보 수집 및 이용에 대한 동의를 구합니다. <br />
+                이용자는 본 개인정보 수집 및 이용에 동의를 거부할 권리가 있으며, 동의하지 않을 경우 입사 지원 및 프로젝트 문의를 하실 수 없습니다.
+              </p>
+              <h4 class="tit_02">1. 개인정보 수집 및 이용 목적</h4>
+              <ol class="list_01">
+                <li><span>1</span> 뉴스레터 수신 희망자에게 뉴스레터 메일 발송</li>
+                <li><span>2</span> 입사 지원 시 채용 심사 진행 및 결과 안내</li>
+                <li><span>3</span> 프로젝트에 대한 견적, 기간, 개발 방법 등 문의에 대한 답변</li>
+              </ol>
+              <h4 class="tit_02">2. 수집하는 개인정보. 항목</h4>
+              <ol class="list_01">
+                <li><span>1</span> 뉴스레터 발송 : 이메일</li>
+                <li><span>2</span> 입사지원 : 이름, 연락처, 이메일</li>
+                <li><span>3</span> 프로젝트 문의 : 이름, 회사명, 연락처, 이메일</li>
+              </ol>
+              <h4 class="tit_02">3. 보유이용기간</h4>
+              <p class="txt_02">
+                원칙적으로 개인정보 수집 및 이용목적이 달성된 후, 개인정보를 지체없이 파기합니다. <br />
+                단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간동안 보존합니다.<br />
+                - 보존 이유 : 이용자의 동의를 통한 정보 유지<br />
+                - 보존 기간 : 회원정보 삭제 요청시까지
+              </p>
+            </div>
+            <a href="#self" class="btn_close" onclick="layer_CLOSE('#popup_privacy');"><span class="blind">창닫기</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup end -->
+
+    <!-- renewal -->
+    <script src="js/scrolloverflow.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/easings.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      // Random Stars
+      var generateStars = function () {
+        var $galaxy = $('.galaxy');
+        var iterator = 0;
+
+        while (iterator <= 100) {
+          var xposition = Math.random();
+          var yposition = Math.random();
+          var star_type = Math.floor(Math.random() * 4 + 1);
+          var position = {
+            x: $galaxy.width() * xposition,
+            y: $galaxy.height() * yposition,
+          };
+
+          $('<div class="star star-type' + star_type + '"></div>')
+            .appendTo($galaxy)
+            .css({
+              top: position.y,
+              left: position.x,
+            });
+
+          iterator++;
+        }
+      };
+
+      generateStars();
+    </script>
+  </body>
+</html>
