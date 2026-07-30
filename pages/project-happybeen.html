@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네이버 해피빈 캠페인 | AK Portfolio</title>
+  <meta name="description" content="네이버 해피빈 플랫폼 캠페인 페이지 마크업 및 다양한 인터랙션 구현 프로젝트">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="logo"><a href="/">AK Portfolio</a></div>
+      <nav class="gnb">
+        <a href="/#about">About</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="inner">
+
+        <a href="/" class="back-link">← 포트폴리오로 돌아가기</a>
+
+        <p class="project-year">2021 — 2025</p>
+
+        <h1 class="project-title">네이버 해피빈 캠페인 페이지</h1>
+
+        <p class="project-summary">
+          네이버의 기부·소셜펀딩 플랫폼 해피빈에서 다수의 클라이언트 캠페인 페이지를 담당했습니다.
+          PC·Mobile 적응형으로 각각 제작하며, 캠페인마다 새롭게 요구되는
+          인터랙션과 애니메이션을 jQuery로 직접 설계하고 구현했습니다.
+        </p>
+
+        <ul class="project-tags">
+          <li>Animation</li>
+          <li>Campaign Page</li>
+          <li>Adaptive Web</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://happybean.naver.com" class="project-link" target="_blank" rel="noopener noreferrer">
+            해피빈 방문하기
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="project-meta">
+      <div class="inner">
+        <dl class="meta-grid">
+          <div>
+            <dt>기간</dt>
+            <dd>2021 — 2025</dd>
+          </div>
+          <div>
+            <dt>역할</dt>
+            <dd>Web Publisher</dd>
+          </div>
+          <div>
+            <dt>기여도</dt>
+            <dd>100%</dd>
+          </div>
+          <div>
+            <dt>기술스택</dt>
+            <dd>HTML5 · CSS3 · jQuery · Swipe.js</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="project-body">
+      <div class="inner">
+
+        <section class="project-section fade-up">
+          <h2>Background</h2>
+          <p>
+            해피빈은 네이버의 기부·소셜펀딩 플랫폼으로, 기업·기관 클라이언트가
+            자체 캠페인 페이지를 통해 참여를 유도합니다.
+            각 캠페인 페이지는 클라이언트마다 다른 콘셉트와 인터랙션 요구를 가지며,
+            참여율을 높이기 위한 창의적인 UI 구현이 핵심입니다.
+            2021년부터 2025년까지 다수의 캠페인 페이지를 담당했으며,
+            PC·Mobile을 각각 별도 제작하는 적응형(Adaptive) 방식으로 작업했습니다.
+          </p>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Responsibilities</h2>
+          <ul class="duty-list">
+            <li>PC · Mobile 각각 별도 제작하는 적응형 캠페인 페이지 마크업</li>
+            <li>YouTube 재생 진행에 연동되는 커스텀 프로그레스 바 구현</li>
+            <li>Book 페이지 넘김 · Firework · 텍스트 타이핑 등 테마별 애니메이션 개발</li>
+            <li>Drag&amp;Drop · Card Flip · OX 퀴즈(앞뒤 이동) · 랜덤 이미지 노출 등 인터랙티브 기능 구현</li>
+            <li>비포&amp;애프터 슬라이더 · 커스텀 마우스 커서 · 텍스트 하이라이트 등 UI 요소 개발</li>
+            <li>기획서 너머의 클라이언트 의도를 파악하여 완성도 있는 결과물 납품</li>
+          </ul>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Key Challenge</h2>
+          <div class="challenge-grid">
+            <div class="challenge-item" data-label="Problem">
+              <p>
+                캠페인마다 새로운 인터랙션 요구가 들어왔고,
+                해피빈 플랫폼 환경에서 일부 외부 스크립트가 충돌하는 문제가 있었습니다.
+                기획서에 명시되지 않은 부분도 많아
+                클라이언트 의도를 직접 해석해야 하는 상황이 반복됐습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Solution">
+              <p>
+                플랫폼에서 안정적으로 동작하는 범위를 먼저 파악하고,
+                jQuery 기반 커스텀 스크립트를 매번 직접 작성하는 방식으로 대응했습니다.
+                기획 의도가 불명확한 부분은 기획자와 사전 소통을 통해 확인하고
+                기획서 이상의 완성도를 목표로 작업했습니다.
+              </p>
+            </div>
+            <div class="challenge-item" data-label="Result">
+              <p>
+                YouTube 연동 프로그레스, 북 플립, 드래그&amp;드롭, OX 퀴즈 등
+                다양한 인터랙션을 플랫폼 오류 없이 구현.
+                4년간 수십여 개 캠페인을 안정적으로 납품했습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section fade-up">
+          <h2>Retrospective</h2>
+          <div class="retro-block">
+            <p>
+              정해진 패턴을 반복하는 것이 아니라, 캠페인마다 새로운 인터랙션 방식을 찾아야 했습니다.
+              플랫폼 제약 안에서 창의적인 솔루션을 도출하는 힘과,
+              기획서 너머의 의도를 읽어내는 감각을 이 작업들을 통해 키웠습니다.
+              수십 개의 캠페인을 거치며 다양한 jQuery 애니메이션 기법을 체득했고,
+              이것이 이후 GSAP 기반 인터랙션 작업의 토대가 됐습니다.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <div class="inner">
+        <a href="/#projects" class="btn">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AK Portfolio</p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+
+</body>
+</html>
